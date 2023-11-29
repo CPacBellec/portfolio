@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+ <nav id="desktop-nav">
+    <div class="logo">
+        Cyril Bellec
+    </div>
+    <div>
+       <ul class="nav-links">
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#project">Mes projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+       </ul> 
+    </div>
+ </nav>
+ <nav id="hamburger-nav">
+    <div class="logo">
+        Cyril Bellec
+    </div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Mes projets</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+ </nav>
+ <section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Cyril Bellec Profile picture">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Bonjour, je m'appelle</p>
+        <h1 class="title">Cyril Bellec</h1>
+        <p class="section__text__p2">Developpeur frontend et backend</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Téléchargez mon CV</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contactez-moi</button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="Mon profil LinkedIn" class="icon" onclick="location.href='https://linkedin.com/in/cyril-bellec-4142aab2'">
+            <img src="./assets/github.png" alt="Mon profil Github" class="icon" onclick="location.href='https://github.com/Sinisterw0lf'">
+        </div>
+    </div>
+ </section>
+<script src="script.js"></script>
+</body>
+</html>
